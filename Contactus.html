@@ -1,0 +1,108 @@
+<!-- HTML code to illustrate HTML elements -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mobileshop</title>
+	<link rel="stylesheet" type="text/css" href="homepagestyle.css">
+	<script src="home.js"></script>
+	<style>
+		/*This is heading tag*/
+		h2{
+			text-align: center;
+		}
+	</style>
+</head>
+<body onload="nextColor()">
+
+	<div class="main4"> <!-- This is main div -->
+		<div class="main1">
+			<nav>
+				<div class="logo" class="logoo">
+					<img src="images/images.jpg">
+				</div>
+				<div class="nav-links">
+					<ul>
+						<li><a href="HOME.HTML">Home</li></a>
+						<li><a href="product.html">Product</li></a>
+						<li><a href="Blog.html">Blog</li></a>
+						<li><a href="research.html">Research</li></a>	
+						<li><a href="Contactus.html">Contact us</li></a>
+					</ul>
+				</div>
+			</nav>
+		</div>	
+		<div class="sign1">
+			<button class="sign2">signup</button><!--  this is signup button -->
+		</div>
+		<div class="contact1">
+			<form onsubmit="submit_check()">
+				<h2> GET IN TOUCH </h2>
+				<label class="form1">Full Name: </label>
+				<input type="text" id="Fullname" placeholder="Enter Your Name">
+				<br>
+				<br>
+
+				<label class="form1">Email Address</label>
+				<input type="email" id="emailaddress" placeholder="Your email"> 
+				<br>
+				<br>
+
+				<label class="form1">Gender:<br> </label>
+				<input type="radio"  name="genderDetails" value="male" checked>Male<br>
+				<input type="radio"  name="genderDetails" value="female">Female
+				<br>
+				<br>
+				<label class="form1">Mobile no </label>
+				<input type="text" id="mobileno" placeholder="phone Number"> 
+				<br>
+				<br>
+				<label class="form1">Message:</label>
+				<br>
+				<textarea rows="10" cols="60" id ="message" placeholder="Enter your message"></textarea>
+				<br>
+				<br>
+				<input type="submit" value="Submit Button" class="form2">
+			</form>
+		</div>
+		<div class="map1"> <h1 class="meet3">Meet Us At</h1><img src="images/map.jpg" class="map2"> <h1 style="color:blue;text-align:center; font-size: 100px;" id="thanks1">Thanks For Visit</h1></div>
+		<div class="footer3"> <!-- this is footer -->
+			<div class="findus"><h2 class="footer2">Find Us At </h2>
+				<img src="images/appstore.png" class="store1">
+				<img src="images/playstore.png" class="store1">
+			</div>
+			<div class= "copyright"><p class="copy1">&copy; Anup Acharya Chhetri 2022</p>
+			</div>
+			<div class="findus"><p class="text1">OUR CONTACT DETAILS</p>
+				<h5 class="text1">Mobile Number:9841583459</h5>
+				<h5 class="text1">Email Id:anupac2002@gmail.com</h5>
+				<h5 class="text1">Registered Address</h5>
+				<h5>Shop No.9, ankit School Building</h5>
+				<h5 class="text1">Work Timings</h5>
+				<h5>Monday To Saturday (10:AM - 18:30 PM)</h5>
+			</div>
+			<div class="followus"><h5 class="footer2">Follow us on</h5>
+				<img src="images/fb.png" class="store">
+				<img src="images/insta.jpg" class="store">
+				<img src="images/Twitter.png" class="store">
+			</div>
+
+		</div> 
+	</div>
+	<script> /*internal js is used*/
+		function nextColor(){
+			setInterval(waaw2,1000);// setting interval
+		}
+
+
+		const q= ["blue","green","pink"];
+		var y = 0;
+		function waaw2()//calling function
+		{
+			y = (y === q.length-1)?0 : y+1;
+			document.getElementById('thanks1').style.color = q[y];
+		}
+	</script>
+</body>
+</head>

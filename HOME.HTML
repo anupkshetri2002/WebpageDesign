@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mobileshop</title>
+
+	<link rel="stylesheet" type="text/css" href="homepagestyle.css"> <!-- this link tag link css to html -->
+</head>
+<body>
+	<div class="main">
+		<div class="main1">
+			<nav> <!-- this is navigation bar  -->
+				<div class="logo">
+					<img src="images/images.jpg" class="logoo">
+				</div>
+				<div class="nav-links">
+					<ul>
+						<li><a href="HOME.HTML">Home</li></a>
+						<li><a href="product.html">Product</li></a>
+						<li><a href="Blog.html">Blog</li></a>
+						<li><a href="research.html">Research</li></a>	
+						<li><a href="Contactus.html">Contact us</li></a>
+					</ul>
+				</div>
+			</nav>
+		</div>	
+		<div class="sign1">
+			<button class="sign2">signup</button>
+		</div>
+		
+		<div class="bg">
+			<img  src="images/banner1.jpg" id="slide">
+
+		</div>
+		<div class="brands"> <h2 class="heading1">Brands We Deals</h2>
+			<img src="images/apple.jpg">
+			<img src="images/vivo.jpg">
+			<img src="images/oppo.jpg">
+			<img src="images/samsung.jpg">
+			<img src="images/mi.jpg">
+			<img src="images/oneplus.jpg">
+			<img src="images/poco.jpg">
+			<img src="images/realme.jpg">
+		</div>
+		<div class="brands1">
+			<h2 class="heading2"> Top Selling Models </h2>
+			<div class="product1"><img src="images/apple-iphone-7-1.png"><p class="p1">Iphone-7</p>
+			</div>
+			<div class="product1"><img src="images/apple-iphone-11-1.jpg"><p class="p1">Iphone-11</p></div>
+			<div class="product1"><img src="images/apple-iphone-xr-1.png"><p class="p1">Iphone-xr</p></div>
+			<div class="product1"><img src="images/oneplus-6-1.png"><p class="p1">OnePLus-6</p>
+			</div>
+			<div class="product1"><img src="images/xiaomi-redmi-note-5-pro-1.png"><p class="p1">Redmi-note-5</p>
+			</div>
+			<div class="product1"><img src="images/samsung-galaxy-a30s-1.jpg"><p class="p1">GalaxyA30 </p>
+			</div>
+			<div class="product1"><img src="images/xiaomi-redmi-note-8-pro-1.jpg"><p class="p1">Note 8</p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="findus"><h2 class="footer2">Find Us At </h2>
+				<img src="images/appstore.png" class="store1">
+				<img src="images/playstore.png" class="store1">
+			</div>
+			<div class= "copyright"><p class="copy1">&copy; Anup Acharya Chhetri 2022</p></div>
+			<div class="findus"><p class="text1">OUR CONTACT DETAILS</p>
+				<h5 class="text1">Mobile Number:9841583459</h5>
+				<h5 class="text1">Email Id:anupac2002@gmail.com</h5>
+				<h5 class="text1">Registered Address</h5>
+				<h5>Shop No.9, ankit School Building</h5>
+				<h5 class="text1">Work Timings</h5>
+				<h5>Monday To Saturday (10:AM - 18:30 PM)</h5>
+			</div>
+			<div class="followus"><h5 class="footer2">Follow us on</h5>
+				<img src="images/fb.png" class="store">
+				<img src="images/insta.jpg" class="store">
+				<img src="images/Twitter.png" class="store"> 
+			</div>
+		</div> 
+	</div>
+	 <script> /*internal js is created*/
+		var i = 0;
+		var images=["images/bg.jpg","images/bg1.jpg","images/bg2.jpg","images/bg3.jpg","images/bg4.jpg"];
+		setInterval(changeImg, 2000)
+
+		function changeImg() {
+			document.getElementById('slide').src = images[i];
+
+			if (i < images.length - 1){
+				i++;
+			}else{
+				i = 0;
+			}
+		}
+	</script>
+</body>
+</html>
